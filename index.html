@@ -26,6 +26,36 @@ body {font-family: Arial, sans-serif;}
         <p>Kelebihan dari novel ini adalah karakter dan kepribadian Katniss yang mandiri dan pandai berburu membuat kisah ini semakin menarik dengan petualangannya. Penulis sangat jenius dapat membangun dimensi lain dan detail situasinya yang terasa sangat nyata membuat pembaca tenggelam dalam keseruan cerita. Kita dapat merasakan ketulusan kasih sayang kepada keluarganya dan ketegangan di dalam permainan The Hunger Games. Saya sangat menikmati setiap halamannya yang penuh dengan kejadian-kejadian yang unik dan menarik namun juga menyeramkan.
             Kekurangan dari novel ini adalah banyak sekali adegan pembunuhan dan penderitaan Katniss yang kurang pantas untuk dikonsumsi oleh pembaca dibawah umur.
         </p>
+    <form action="proseskomentar.php" method="post">
+<h3>Kolom Komentar</h3>
+<br>
+Komentar anda sangat membantu untuk perkembangan web saya
+<br>
+<hr>
+<pre>
+Nama : <input type = "text" name = "nama" size = "25" maxlength = "50">
+Email : <input type = "text" name = "email" size = "25" maxlength = "50">
+Komentar : <textarea name = "text" name = "komentar" cols = "50" rows = "5"></textarea>
+</pre>
+<input type = "submit" value = "kirim">
+<input type = "reset" value = "batal">
+</form>
+    
+ <h3>Data Komentar</h3>
+<?php
+$nama=$_POST('nama');
+$email=$_POST('email');
+$komentar=$_POST('komentar');
+echo "<h3> Data Komentar</h3>";
+echo "<hr>";
+if(!empty($nama))
+{ echo "Nama		: $nama <br>"; }
+if(!empty($email))
+{ echo "Email		: $email <br>"; }
+if(!empty($komentar))
+{ echo "Komentar	: $komentar <br>"; }
+?>
+
 <h4><a href="#atas"> Kembali ke atas</a></h4>
 </body>
 </html>

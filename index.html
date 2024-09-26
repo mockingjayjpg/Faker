@@ -40,21 +40,6 @@ Komentar : <textarea name = "text" name = "komentar" cols = "50" rows = "5"></te
 <input type = "submit" value = "kirim">
 <input type = "reset" value = "batal">
 </form>
-    
- <h3>Data Komentar</h3>
-<?php
-$nama=$_POST('nama');
-$email=$_POST('email');
-$komentar=$_POST('komentar');
-echo "<h3> Data Komentar</h3>";
-echo "<hr>";
-if(!empty($nama))
-{ echo "Nama		: $nama <br>"; }
-if(!empty($email))
-{ echo "Email		: $email <br>"; }
-if(!empty($komentar))
-{ echo "Komentar	: $komentar <br>"; }
-?>
 
 <h4><a href="#atas"> Kembali ke atas</a></h4>
 </body>

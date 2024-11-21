@@ -9,8 +9,8 @@ body {font-family: Arial, sans-serif;}
 <body>
 
 <h1 id="atas">Review Seri Buku : The Hunger Games</h1>
-    
-<div class="dropdown">
+
+    <div class="dropdown">
   <button class="dropbtn">Dropdown</button>
   <div class="dropdown-content">
     <a href="#">Link 1</a>
@@ -19,8 +19,85 @@ body {font-family: Arial, sans-serif;}
   </div>
 </div>
 
-<h4> <a href="#sinopsis"> Sinopsis</a></h4>
-<h4> <a href="#kelebihan"> Kelebihan dan Kekurangan </a></h4>
+    .navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body style="background-color:white;">
+
+<div class="navbar">
+  <a href="#sinopsis">Sinopsis</a>
+  <a href="#kelebihan">Kelebihan dan Kekurangan</a>
+  <div class="dropdown">
+    <button class="dropbtn">Menu 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Sinopsis</a>
+      <a href="#">Kelebihan dan Kekurangan</a>
+      <a href="#">Instagram</a>
+    </div>
+  </div> 
+</div>
+
+
 <img src="Gambar/download.jfif">
     <p>Trilogi The Hunger Games adalah seri novel fiksi ilmiah-petualangan yang dikarang oleh penulis Amerika Serikat Suzanne Collins. Trilogi ini terdiri dari: The Hunger Games Catching Fire, di Indonesia diterbitkan dengan judul Tersulut Mockingjay. Novel ini dikisahkan dalam sudut pandang seorang gadis umur 16 tahun bernama Katniss Everdeen, yang tinggal di sebuah negara distopia pascaapokalips bernama Panem di Amerika Utara. Capitol, ibu kota metropolis yang sangat maju, memegang kendali politik atas keseluruhan negara. The Hunger Games adalah acara tahunan yang diikuti oleh seorang anak laki-laki dan perempuan yang berusia antara 12–18 tahun dari dua belas distrik di sekeliling Capitol, yang dipilih melalui pengundian untuk bersaing dalam pertarungan mematikan yang disiarkan secara langsung di televisi.</p>
     
